@@ -1,0 +1,74 @@
+.fh5co-nav {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.high-park {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.architecture-interior-architecture {
+  font-size: 0.8rem;
+}
+
+.menu-1 ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-1 li {
+  margin-left: 20px;
+}
+
+.menu-1 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-1 a:hover,
+.menu-1 a.active {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .top-menu {
+    flex-direction: column;
+  }
+
+  .menu-1 {
+    margin-top: 15px;
+  }
+
+  .menu-1 ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-1 li {
+    margin: 10px 0;
+  }
+}
