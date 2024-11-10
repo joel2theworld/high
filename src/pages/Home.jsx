@@ -2,153 +2,309 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectModal from "../components/ProjectModal";
-import Parkview from "../assets/parkview-ext.jpg";
 import Ark from "../assets/ark2.jpg";
 import Ark2 from "../assets/ark.png";
-import Ark3 from "../assets/ark3.jpg";
-import Ark4 from "../assets/ark4.jpg";
-import Ark5 from "../assets/ark5.jpg";
+import Ark3 from "../assets/ak03.jpg";
+import Ark4 from "../assets/ark3.jpg";
+import Ark5 from "../assets/ark4.jpg";
+import Ark6 from "../assets/ark5.jpg";
+import Ark7 from "../assets/ak07.jpg";
+import Ark8 from "../assets/ak08.jpg";
+import Ark9 from "../assets/ak09.jpg";
 import Trim from "../assets/TRIMNELL TOWER_01.jpg";
-import Trim1 from "../assets/trim1.jpg";
-import Trim2 from "../assets/trim2.jpg";
-import Trim3 from "../assets/trim3.jpg";
-import Trim4 from "../assets/trim4.jpg";
+import Trim1 from "../assets/trt05.jpg";
+import Trim2 from "../assets/trt02.jpg";
+import Trim3 from "../assets/trt03.jpg";
+import Trim4 from "../assets/trt08.jpg";
 import Trim5 from "../assets/trim5.jpg";
 import Trim6 from "../assets/trim6.png";
 import Trim7 from "../assets/trim7.jpg";
+import Trim9 from "../assets/trt09.jpg";
+import Trim10 from "../assets/trt10.jpg";
+import Trim11 from "../assets/trt11.jpg";
+import Trim12 from "../assets/trt12.jpg";
+import Trim13 from "../assets/trt13.jpg";
 import Jas from "../assets/jasmine-villas.jpg";
-import Jv1 from "../assets/jv1.jpg";
 import Jv2 from "../assets/jv2.jpg";
 import Jv3 from "../assets/jv3.jpg";
 import Jv4 from "../assets/jv4.jpg";
 import Jv5 from "../assets/jv5.jpg";
 import Jv6 from "../assets/jv6.jpg";
 import Jv7 from "../assets/jv7.jpg";
+import Jv8 from "../assets/jv8.jpg";
+import Jv9 from "../assets/jv9.jpg";
+import Jv10 from "../assets/jv10.jpg";
+import Jv11 from "../assets/jv11.jpg";
+import Jv12 from "../assets/jv12.jpg";
+import Jv13 from "../assets/jv13.jpg";
+import Jv14 from "../assets/jv14.jpg";
 import Integrity from "../assets/integrity-tower.jpg";
-import Int1 from "../assets/int1.jpg";
-import Int2 from "../assets/int2.jpg";
-import Int3 from "../assets/int3.jpg";
-import Int4 from "../assets/int4.jpg";
-import Int5 from "../assets/int5.jpg";
-import Int6 from "../assets/int6.jpg";
-import Oniru from "../assets/oni-EXTERIOR_01.jpg";
-import Oniru2 from "../assets/oniru-EXTERIOR_02.jpg";
-import Oniru3 from "../assets/oniru-RECEPTION.png";
+import Int2 from "../assets/int02.jpg";
+import Int3 from "../assets/int03.jpg";
+import Int4 from "../assets/int04.jpg";
+import Int5 from "../assets/int05.jpg";
+import Int6 from "../assets/int06.jpg";
+import Int7 from "../assets/int07.jpg";
+import Int8 from "../assets/int08.jpg";
+import Int9 from "../assets/int09.jpg";
+import int10 from "../assets/int10.jpg";
+import int11 from "../assets/int11.jpg";
+import int12 from "../assets/int12.jpg";
+import int13 from "../assets/int13.jpg";
+import int14 from "../assets/int14.jpg";
+import int15 from "../assets/int15.jpg";
+import int16 from "../assets/int16.jpg";
+import Jade from "../assets/jc1.jpg";
+import Jade2 from "../assets/jc2.jpg";
+import Jade3 from "../assets/jc3.jpg";
+import landbridge from "../assets/ldb01 COVER.jpg";
+import landbridge2 from "../assets/ldb02.jpg";
+import landbridge3 from "../assets/ldb03.png";
+import landbridge4 from "../assets/ldb04.png";
+import landbridge5 from "../assets/ldb05.png";
+import landbridge6 from "../assets/ldb06.png";
+import landbridge7 from "../assets/ldb07.png";
+import landbridge8 from "../assets/ldb08.png";
+import landbridge9 from "../assets/ldb09.png";
+import landbridge10 from "../assets/ldb10.png";
+import landbridge11 from "../assets/ldb11.png";
+import Lbf from "../assets/lbf01 COVER.jpg";
+import Lbf2 from "../assets/lbf02.jpg";
+import Lbf3 from "../assets/lbf03.jpg";
+import Lbf4 from "../assets/lbf04.jpg";
+import Lbf5 from "../assets/lbf05.jpg";
+import Oasis from "../assets/osv01 COVER.jpg";
+import Oasis2 from "../assets/osv02.jpg";
+import Oasis3 from "../assets/osv03.jpg";
+import Oasis4 from "../assets/osv04.jpg";
+import Oasis5 from "../assets/osv05.jpg";
+import Oasis6 from "../assets/osv06.jpg";
+import Oasis7 from "../assets/osv07.jpg";
+import Oasis8 from "../assets/osv08.jpg";
+import Oasis9 from "../assets/osv09.jpg";
+import Oasis10 from "../assets/osv10.jpg";
+import Oasis11 from "../assets/osv11.jpg";
+import Oasis12 from "../assets/osv12.jpg";
+import Oasis13 from "../assets/osv13.jpg";
+import Oasis14 from "../assets/osv14.jpg";
+import Oasis15 from "../assets/osv15.jpg";
+import Patrick from "../assets/PATRICK HARBOUR_E01.jpg";
+import Patrick2 from "../assets/PATRICK HARBOUR_E02.jpg";
+import Project425 from "../assets/425-01 COVER.jpg";
+import Project4252 from "../assets/425-02.jpg";
+import Project4253 from "../assets/425-03.jpg";
 import Guzape from "../assets/Guz-PERSPECTIVE 01.jpg";
-import Guz1 from "../assets/Guz-LOUNGE.png";
-import Guz2 from "../assets/Guz-lounge2.png";
-import Guz3 from "../assets/Guz-MASTER SUITE.png";
-import Guz4 from "../assets/Guz-KITCHEN.png";
-import Villam from "../assets/villa-m.jpg";
-import Vm1 from "../assets/vm1.jpg";
-import Vm2 from "../assets/vm2.jpg";
-import Vm3 from "../assets/vm3.jpg";
-import Vm4 from "../assets/vm4.jpg";
-import Vm5 from "../assets/vm5.jpg";
-import Vm6 from "../assets/vm6.jpg";
+import Guz1 from "../assets/guz02.png";
+import Guz2 from "../assets/guz03.png";
+import Guz3 from "../assets/guz04.png";
+import Guz4 from "../assets/guz05.png";
+import Guz5 from "../assets/guz06.png";
+import Shoreline from "../assets/shvCOVER.jpg";
+import Sh2 from "../assets/shv02.jpg";
+import Vm1 from "../assets/vm01.jpg";
+import Vm2 from "../assets/vm02.jpg";
+import Vm3 from "../assets/vm03.jpg";
+import Vm4 from "../assets/vm04.jpg";
+import Vm5 from "../assets/vm05.jpg";
+import Vm6 from "../assets/vm06.jpg";
+import Vm7 from "../assets/vm07.jpg";
+import Vm8 from "../assets/vm08.jpg";
+import Vm9 from "../assets/vm09.jpg";
+import Vm10 from "../assets/vm10.jpg";
+import Vm11 from "../assets/vm11.jpg";
+import Vm12 from "../assets/vm12.jpg";
 
 const Home = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = {
-    oniru: {
-      title: "Oniru Project",
-      location: "Oniru, Lagos",
-      images: [Oniru, Oniru2, Oniru3],
-      description: "A modern architectural marvel in the heart of Oniru, featuring contemporary design elements and sustainable materials.",
+    shoreline: {
+      title: "SHORELINE VILLAS",
+      location: "Lagos",
+      images: [Shoreline, Sh2],
+      description:
+        "This high-end villa in Shoreline Estate, Lagos, epitomizes luxury living and sophistication, blending modern design with the beauty of coastal surroundings. Shoreline Estate is one of the most exclusive neighborhoods in Lagos, offering a serene, upscale environment with top-tier amenities and a prime location along the waterfront. The villa features contemporary architecture with clean, sleek lines and expansive glass facades that maximize views of the serene surroundings.",
       details: [
         "Contemporary architectural design",
         "Sustainable building materials",
         "Smart home integration",
-        "Premium location in Oniru"
-      ]
+        "Premium location in Oniru",
+      ],
     },
     trimnell: {
       title: "Trimnell Tower",
       location: "Victoria Island, Lagos",
-      images: [Trim, Trim7, Trim1, Trim2, Trim3, Trim4, Trim5, Trim6],
-      description: "Trimnell Tower is a luxury high rise development situated in the exclusive enclave of Victoria Island Lagos. The development is a radical and bold architectural statement on the Lagos skyline that seeks an innovative and ingenious approach to spatial organization in the context of high density.",
+      images: [
+        Trim,
+        Trim2,
+        Trim3,
+        Trim7,
+        Trim1,
+        Trim6,
+        Trim5,
+        Trim4,
+        Trim9,
+        Trim10,
+        Trim11,
+        Trim12,
+        Trim13,
+      ],
+      description:
+        "Trimnell Tower is a luxury high rise development situated in the exclusive enclave of Victoria Island Lagos. The development is a radical and bold architectural statement on the Lagos skyline that seeks an innovative and ingenious approach to spatial organization in the context of high density.",
       details: [
         "Luxury residential apartments",
         "Premium amenities",
         "Ocean view terraces",
-        "24/7 security"
-      ]
+        "24/7 security",
+      ],
     },
     integrity: {
-      title: "Integrity Tower",
+      title: "INTEGRITY TOWER",
       location: "Lekki, Lagos",
-      images: [Integrity, Int1, Int2, Int3, Int4, Int5, Int6],
-      description: "Integrity Tower is a contemporary statement on the Lekki skyline, which soars uniquely in a class of its own. With HIGH PARK engaged as Architect + Interior Architect, we set out to create a modern, yet stylish design. Geometric lines and curves are masterfully composed into a uniquely identifiable landmark which recapitulates and confounds to the stylish Art Nouveau Era. Minimal yet fashionably elegant and sophisticated, Integrity Tower aims for a balance between pared back barefoot luxury and elegant living.",
+      images: [
+        Integrity,
+        Int2,
+        Int3,
+        Int4,
+        Int5,
+        Int6,
+        Int7,
+        Int8,
+        Int9,
+        int10,
+        int11,
+        int12,
+        int13,
+        int14,
+        int15,
+        int16,
+      ],
+      description:
+        "Integrity Tower is a contemporary statement on the Lekki Skyline which soars uniquely in a class of its own.The language of the design is unmistakably modern. Geometric lines and curves are masterfully composed into a cutting-edge 21st-century residential development.",
       details: [
         "Luxury residential apartments",
         "Modern facilities",
         "A skillful combination of earth tones, neutral fabrics and metallic accents",
-        "Sustainable design features and abundant day lighting"
-      ]
+        "Sustainable design features and abundant day lighting",
+      ],
     },
     villam: {
       title: "Villa M",
       location: "Lagos",
-      images: [Villam, Vm1, Vm2, Vm3, Vm4, Vm5, Vm6],
-      description: "Located on a lagoon facing peninsula, Villa M delicately slots into the luxurious neighborhood of Cowrie Creek Estate. The narrow and elongated door plate created an opportunity for HIGH PARK to discretely break down the volume into zones of activities, each defined by a set of unique custom elements.",
+      images: [Vm1, Vm2, Vm3, Vm4, Vm5, Vm6, Vm7, Vm8, Vm9, Vm10, Vm11, Vm12],
+      description:
+        "Located on a lagoon facing peninsula, Villa M delicately slots into the luxurious neighborhood of Cowrie Creek Estate. The narrow and elongated door plate created an opportunity for HIGH PARK to discretely break down the volume into zones of activities, each defined by a set of unique custom elements.",
       details: [
         "- The foyer is defined by a series of vertical custom lights which double as directional markers.",
         "- The stair volume by an organic dematerialized staircase and wall cladding with differently sized elements and serrations.",
         "- Custom interior finishes",
-        "- The living area maintains a similar vertical archetype with it’s custom light rain suspension chandelier and towering wall unit."
-      ]
+        "- The living area maintains a similar vertical archetype with it’s custom light rain suspension chandelier and towering wall unit.",
+      ],
     },
-    parkview: {
-      title: "Parkview Extension",
-      location: "Ikoyi, Lagos",
-      images: [Parkview],
-      description: "An elegant residential development in the prestigious Parkview Estate area.",
+    oasis: {
+      title: "OASIS VILLA",
+      location: "Lagos",
+      images: [
+        Oasis,
+        Oasis2,
+        Oasis3,
+        Oasis4,
+        Oasis5,
+        Oasis6,
+        Oasis7,
+        Oasis8,
+        Oasis9,
+        Oasis10,
+        Oasis11,
+        Oasis12,
+        Oasis13,
+        Oasis14,
+        Oasis15,
+      ],
+      description: `Situated on a private drive off the commercial Admiralty strip, the architecture of this home is informed by its metropolitan condition. An oasis in the heart of the city, a hideaway from the buzzing city of Lagos, yet within reach of major high end art institutions, fine dining & business. \nDesigned by renowned South-African Architecture Studio - Luc Zeghers Architects (LZA), HIGH PARK was commissioned as Interior Architect and Project manager. Ambitious from the onset, we set to maintain the minimalist rigor of the architecture whilst infusing a layer of sensory and emotional richness to the design without compromising the refined functionality of it’s concept.\nWith that in mind, we opted to create a unified inner shell which allowed us to combine discreet elements such as doors, cabinetry, wall units & wine display into a unified system to present sleek uncluttered surfaces throughout the home.\nA layer of rich textures, finely detailed loose furniture, art & eclectic accessories is then introduced to create an emotive sense of luxury & well being.`,
       details: [
         "- Premium residential development",
         "- Landscaped surroundings",
         "- Modern amenities",
-        "- Exclusive location"
-      ]
+        "- Exclusive location",
+      ],
     },
     jasmine: {
-      title: "Jasmine Villas",
+      title: "JASMINE VILLAS",
       location: "Ikoyi, Lagos",
-      images: [Jas, Jv1, Jv2, Jv3, Jv4, Jv5, Jv6, Jv7],
-      description: "When approached to design the Interior Architecture of these homes in this Ikoyi development, HIGH PARK sought to create distinct visual identities for each scheme.",
+      images: [Jas, Jv2, Jv3, Jv4, Jv5, Jv6, Jv7, Jv8, Jv9, Jv10, Jv11, Jv12, Jv13, Jv14],
+      description:
+        "These modern family villas combine minimalist design, functional spaces, and a strong connection to nature. The residences are conceived as a harmonious blend of form and function, with an emphasis on openness, light, and comfort. Featuring clean lines, large glass windows, and a thoughtful layout, the villas are designed to accommodate the needs of a growing family while maintaining a sense of sophistication and timelessness",
       details: [
         "VILLA 1",
-        "- Double height living area which features a cluster of ring suspension lighting", 
+        "- Double height living area which features a cluster of ring suspension lighting",
         "- The elevator shaft is a rough textured volume which runs through the four(4) levels of the home, revealing presence on every floor.",
         "VILLA 2",
-        "- Elevated beautifully lit open plan living experience.", 
+        "- Elevated beautifully lit open plan living experience.",
         "- The use of soft organic forms throughout the home is used to convey a sense of comfort and relaxation.",
-        "A neutral aesthetic with slight pops of rich color serves to enliven the schemes while maintaining a sense of calm and serenity."
-      ]
+        "A neutral aesthetic with slight pops of rich color serves to enliven the schemes while maintaining a sense of calm and serenity.",
+      ],
     },
     ark: {
-      title: "The Ark",
+      title: "THE ARK",
       location: "Lekki, Lagos",
-      images: [Ark, Ark2, Ark3, Ark4, Ark5],
-      description: "As Architect + Interior Architect, HIGH PARK was tasked by the client’s brief to create a ‘boutique living experience.’ The development is situated in the upmarket Lekki Neighborhood and delivers a sense of ‘savoir vivre’ - the ability to live elegantly. This gem of a living space with it’s high ceilings, walls of folding glass doors and wide panorama conveys the opulence of a Manhattan Penthouse, right in the heart of Lagos!",
+      images: [Ark, Ark2, Ark3, Ark4, Ark5, Ark6, Ark7, Ark8, Ark9],
+      description:
+        "This modern development is situated in the upmarket Lekki neighborhood of Lagos. The design delivers a sense of ‘savoir vivre’ - the ability to live elegantly.The scheme comprises four triplexes and two penthouse apartments. Each unit is beautifully lit and rigorously designed to convey a minimalistic version of contemporary elegance.",
       details: [
         "- Comprises four(4) triplexes and two(2) penthouses",
         "- Living areas spill onto expansive perimeter loggia, for entertainment and enjoyment of the tropical seasons",
         "- 2 penthouses are perched above, with loggias stretching the width of the units and crowned with a cantilevered deck above.",
-        "- Living areas are elevated via a sculptural staircase which runs through the triplexes."
-      ]
+        "- Living areas are elevated via a sculptural staircase which runs through the triplexes.",
+      ],
     },
-    guzape: {
-      title: "Guzape Project",
-      location: "Guzape, Abuja",
-      images: [Guzape, Guz1, Guz2, Guz3, Guz4],
-      description: "A landmark development in Abuja's emerging Guzape district.",
+    landbridge: {
+      title: "LANDBRIDGE TOWER",
+      location: "Lagos",
+      images: [landbridge, landbridge2, landbridge3, landbridge4, landbridge5, landbridge6, landbridge7, landbridge8, landbridge9, landbridge10, landbridge11],
+      description:
+        "Landbridge Tower is an Architectural phenomenon where modern architecture fuses with enduring grandeur. It transcends the norms and meets today's contemporary and sustainable fundamentals that makes it a living environment of first choice within one of Lagos's highbrow neighborhoods.",
       details: [
-        "Mixed-use development",
-        "Modern architecture",
-        "Premium facilities",
-        "Strategic location"
-      ]
+        "Contemporary architectural design",
+        "Premium finishes",
+        "Landscaped surroundings",
+        "Exclusive location",
+      ],
+    },
+    patrick: {
+      title: "PATRICK HARBOUR",
+      location: "Lagos",
+      images: [Patrick, Patrick2],
+      description:
+        "This striking 4-storey modern home embodies cutting-edge design and architectural innovation. It seamlessly blends form and function, using clean lines, expansive glass panels, and a thoughtful balance of natural materials to create an open, airy, and sophisticated living environment.",
+      },
+    guzape: {
+      title: "GUZAPE SLOPES",
+      location: "Guzape, Abuja",
+      images: [Guzape, Guz1, Guz2, Guz3, Guz4, Guz5],
+      description:
+        "A landmark development in Abuja's emerging Guzape district."
+    },
+    project425: {
+      title: "PROJECT 425",
+      location: "Lagos",
+      images: [Project425, Project4252, Project4253],
+      description:
+        "This modern development is situated in the upmarket Lekki neighborhood of Lagos. The design delivers a sense of ‘savoir vivre’ - the ability to live elegantly.The scheme comprises four triplexes and two penthouse apartments. Each unit is beautifully lit and rigorously designed to convey a minimalistic version of contemporary elegance.",
+    },
+    lekkibeachfront: {
+      title: "LEKKI BEACH FRONT",
+      location: "Lekki, Lagos",
+      images: [Lbf, Lbf2, Lbf3, Lbf4, Lbf5],
+      description:
+        "A landmark development in Abuja's emerging Guzape district."
+    },
+    jades: {
+      title: "JADE'S COURT",
+      location: "Lagos",
+      images: [Jade, Jade2, Jade3],
+      description:
+        "A landmark development in Abuja's emerging Guzape district."
     }
   };
 
@@ -164,7 +320,7 @@ const Home = () => {
         <div id="fh5co-intro">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 col-md-pull-2">
-              <h2>A New Paradigm for Architectural Design &amp; Interior.</h2>
+              <h2>A NEW PARADIGM FOR ARCHITECTURAL DESIGN &amp; INTERIOR.</h2>
             </div>
           </div>
         </div>
@@ -174,38 +330,50 @@ const Home = () => {
             <div className="col-md-6 padding-right">
               <div className="row">
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('oniru', e)}>
-                    <img
-                      src={Oniru}
-                      className="img-responsive"
-                      alt="Oniru project lagos"
-                    />
-                    <div className="desc">
-                      <h3>Oniru Project</h3>
-                      <span>Oniru, Lagos</span>
-                    </div>
-                  </a>
-                </div>
-                <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('trimnell', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("trimnell", e)}
+                  >
                     <img
                       src={Trim}
                       className="img-responsive"
-                      alt="Trimnell Tower Interior"
+                      alt="Trimnell Tower"
                     />
                     <div className="desc">
-                      <h3>Trimnell Tower</h3>
+                      <h3>TRIMNELL TOWER</h3>
                       <span>Victoria Island, Lagos</span>
                     </div>
                   </a>
                 </div>
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('integrity', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("shoreline", e)}
+                  >
+                    <img
+                      src={Shoreline}
+                      className="img-responsive"
+                      alt="Shoreline estate lagos"
+                    />
+                    <div className="desc">
+                      <h3>SHORELINE VILLAS</h3>
+                      <span>Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("integrity", e)}
+                  >
                     <img
                       src={Integrity}
                       className="img-responsive"
                       alt="Integrity Tower Lekki"
-                      style={{ width: '100%' }}
+                      style={{ width: "100%" }}
                     />
                     <div className="desc">
                       <h3>Integrity Tower</h3>
@@ -214,15 +382,53 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('villam', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("landbridge", e)}
+                  >
                     <img
-                      src={Villam}
+                      src={landbridge}
                       className="img-responsive"
-                      alt="Villa M Lagos"
+                      alt="Landbridge Tower Lagos"
                     />
                     <div className="desc">
-                      <h3>Villa M</h3>
+                      <h3>LANDBRIDGE TOWER</h3>
                       <span>Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("guzape", e)}
+                  >
+                    <img
+                      src={Guzape}
+                      className="img-responsive"
+                      alt="Guzape Project Abuja"
+                    />
+                    <div className="desc">
+                      <h3>GUZAPE SLOPES</h3>
+                      <span>Guzape, Abuja</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("lekkibeachfront", e)}
+                  >
+                    <img
+                      src={Lbf}
+                      className="img-responsive"
+                      alt="Lekki Beach Front Lagos"
+                    />
+                    <div className="desc">
+                      <h3>LEKKI BEACH FRONT</h3>
+                      <span>Lekki, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -232,54 +438,121 @@ const Home = () => {
             <div className="col-md-6 padding-left">
               <div className="row">
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('parkview', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("oasis", e)}
+                  >
                     <img
-                      src={Parkview}
+                      src={Oasis}
                       className="img-responsive"
-                      alt="Parkview Extension Ikoyi"
+                      alt="Oasis Villa"
                     />
                     <div className="desc">
-                      <h3>Parkview Extension</h3>
-                      <span>Ikoyi, Lagos</span>
+                      <h3>OASIS VILLA</h3>
+                      <span>Lagos</span>
                     </div>
                   </a>
                 </div>
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('jasmine', e)}>
-                    <img
-                      src={Jas}
-                      className="img-responsive"
-                      alt="Jasmine Villas Ikoyi"
-                    />
-                    <div className="desc">
-                      <h3>Jasmine Villas</h3>
-                      <span>Ikoyi, Lagos</span>
-                    </div>
-                  </a>
-                </div>
-                <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('ark', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("ark", e)}
+                  >
                     <img
                       src={Ark}
                       className="img-responsive"
                       alt="The Ark Lekki"
                     />
                     <div className="desc">
-                      <h3>The Ark</h3>
+                      <h3>THE ARK</h3>
                       <span>Lekki, Lagos</span>
                     </div>
                   </a>
                 </div>
                 <div className="col-md-12 animate-box">
-                  <a href="#" className="portfolio-grid" onClick={(e) => handleProjectClick('guzape', e)}>
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("jasmine", e)}
+                  >
                     <img
-                      src={Guzape}
+                      src={Jas}
                       className="img-responsive"
-                      alt="Guzape Project Abuja"
+                      alt="Jasmine Villas Ikoyi"
                     />
                     <div className="desc">
-                      <h3>Guzape Project</h3>
-                      <span>Guzape, Abuja</span>
+                      <h3>JASMINE VILLAS</h3>
+                      <span>Ikoyi, Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("patrick", e)}
+                  >
+                    <img
+                      src={Patrick}
+                      className="img-responsive"
+                      alt="PATRICK HARBOUR Lagos"
+                    />
+                    <div className="desc">
+                      <h3>PATRICK HARBOUR</h3>
+                      <span>Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("project425", e)}
+                  >
+                    <img
+                      src={Project425}
+                      className="img-responsive"
+                      alt="PROJECT425 Lagos"
+                    />
+                    <div className="desc">
+                      <h3>PROJECT 425</h3>
+                      <span>Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("villam", e)}
+                  >
+                    <img
+                      src={Vm1}
+                      className="img-responsive"
+                      alt="Villa M Lagos"
+                    />
+                    <div className="desc">
+                      <h3>VILLA M</h3>
+                      <span>Lagos</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-md-12 animate-box">
+                  <a
+                    href="#"
+                    className="portfolio-grid"
+                    onClick={(e) => handleProjectClick("jades", e)}
+                  >
+                    <img
+                      src={Jade}
+                      className="img-responsive"
+                      alt="JADE'S COURT Lagos"
+                    />
+                    <div className="desc">
+                      <h3>JADE'S COURT</h3>
+                      <span>Lagos</span>
                     </div>
                   </a>
                 </div>
