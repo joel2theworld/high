@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Shippori Antique";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -106,8 +106,8 @@ h5,
 h6,
 figure {
   color: #000000;;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+  font-family: "Shippori Antique";
+  font-weight: 500;
   margin: 0 0 20px 0;
 }
 
@@ -153,7 +153,7 @@ figure {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-family: "Playfair Display", serif;
+  font-family: "Shippori Antique";
 }
 .menu-1 a:hover,
 .menu-1 a.active {
@@ -176,7 +176,7 @@ figure {
   margin: 1em 0 0 0;
 }
 .fh5co-nav ul li {
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Shippori Antique";
   padding: 0;
   margin: 0;
   list-style: none;
@@ -369,12 +369,12 @@ figure {
   padding: 1em 0 1em 0;
 }
 #fh5co-intro h2 {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 44px;
   color: #000000;
 }
 #fh5co-intro h2 span {
-  font-family: "Open Sans", arial, sans-serif !important;
+  font-family: "Shippori Antique" !important;
   font-size: 16px;
 }
 #fh5co-intro h2 span em {
@@ -525,7 +525,7 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 .form-group .btn-modify {
-  font-family: "Playfair Display", serif;
+  font-family: "Shippori Antique";
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -570,7 +570,7 @@ input[type="text"] {
   margin-bottom: 20px;
   line-height: 1.5;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Shippori Antique";
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #000;
@@ -858,7 +858,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Shippori Antique";
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 1px;
@@ -1136,7 +1136,7 @@ input[type="text"] {
 }
 
 .high-park {
-  font-family: "Montserrat";
+  font-family:"Shippori Antique";
   font-weight: 600;
   font-size: 3rem;
   letter-spacing: 0.5rem;
@@ -1147,7 +1147,7 @@ input[type="text"] {
 .architecture-interior-architecture {
   margin-top: 5px;
   overflow-wrap: break-word;
-  font-family: "Montserrat";
+  font-family: "Shippori Antique";
   font-weight: 600;
   font-size: 1rem;
   line-height: 2;
@@ -1179,7 +1179,7 @@ input[type="text"] {
 .slide-caption{
   line-height: 0;
   font-size: 17px;
-  font-family: "Playfair Display", serif;
+  font-family: "Shippori Antique";
   font-weight: 700;
 }
 .about-page {
@@ -1217,7 +1217,9 @@ input[type="text"] {
   display: block;
   margin-bottom: 0.5rem;
 }
-
+.about-image{
+  justify-content: center;
+}
 .about-image img {
   max-width: 100%;
   height: auto;
@@ -1236,7 +1238,6 @@ input[type="text"] {
 
   .about-image {
     width: 50%;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
   }

@@ -64,13 +64,13 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             <p className="location">{project.location}</p>
             
             {project.description && (
-              <>
+              <div>
                 <h3 className="section-title">About the Project</h3>
-                <p className="description">{project.description}</p>
-              </>
+                <p className="project-description" >{project.description}</p>
+              </div>
             )}
 
-            {project.details && (
+            {/* {project.details && (
               <>
                 <h3 className="section-title">Project Details</h3>
                 <ul>
@@ -79,7 +79,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                   ))}
                 </ul>
               </>
-            )}
+            )} */}
           </div>
         </div>
       </div>
