@@ -376,7 +376,7 @@ const Home = () => {
                       style={{ width: "100%" }}
                     />
                     <div className="desc">
-                      <h3>Integrity Tower</h3>
+                      <h3>INTEGRITY TOWER</h3>
                       <span>Lekki, Lagos</span>
                     </div>
                   </a>

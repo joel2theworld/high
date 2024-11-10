@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Int3 from "../assets/oniru-EXTERIOR_02.jpg";
+import Int3 from "../assets/int03.jpg";
 const About = () => {
   return (
     <div>
