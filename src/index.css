@@ -1218,7 +1218,10 @@ input[type="text"] {
   margin-bottom: 0.5rem;
 }
 .about-image{
+  display: flex;
   justify-content: center;
+  object-fit: contain;
+
 }
 .about-image img {
   max-width: 100%;
@@ -1238,8 +1241,6 @@ input[type="text"] {
 
   .about-image {
     width: 50%;
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .about-image img {
