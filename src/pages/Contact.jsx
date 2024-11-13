@@ -2,10 +2,16 @@ import React from 'react';
 import { Mail, Phone, MapPin, Clock, ExternalLink } from 'lucide-react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
+    
     <div>
+      <Helmet>
+        <title>Contact High Park</title>
+        <meta name="description" content="Premier Architects specializes in innovative architectural designs across Nigeria, featuring projects like Lekki Beach Front and Jade's Court in Lagos." />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </Helmet>
       <Header />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">

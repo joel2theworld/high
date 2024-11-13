@@ -1,74 +1,41 @@
-.fh5co-nav {
-  background-color: #fff;
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Hamburger icon for small screens */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.top-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-}
-
-.high-park {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.architecture-interior-architecture {
-  font-size: 0.8rem;
-}
-
-.menu-1 ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-1 li {
-  margin-left: 20px;
-}
-
-.menu-1 a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.menu-1 a:hover,
-.menu-1 a.active {
-  color: #007bff;
-}
-
+/* Responsive menu styling */
 @media (max-width: 768px) {
-  .top-menu {
-    flex-direction: column;
+  /* Show the hamburger icon */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    flex-direction: column !important;
   }
 
+  /* Hide menu initially on small screens */
   .menu-1 {
-    margin-top: 15px;
+    display: none;
+    width: 100%;
+    text-align: center;
   }
 
-  .menu-1 ul {
+  /* Show the menu vertically when open */
+  .menu-1.open {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .menu-1 li {
+  /* Ensure vertical stacking of menu items */
+  .top-menu .menu-1 ul {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .top-menu .menu-1 ul li {
     margin: 10px 0;
   }
 }

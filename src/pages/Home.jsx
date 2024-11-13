@@ -119,8 +119,8 @@ const Home = () => {
 
   const projectsData = {
     shoreline: {
-      title: "SHORELINE VILLAS",
-      location: "Lagos",
+      title: "AZURE EDGE",
+      location: "Shoreline Estate, Lagos",
       images: [Shoreline, Sh2],
       description:
         "This high-end villa in Shoreline Estate, Lagos, epitomizes luxury living and sophistication, blending modern design with the beauty of coastal surroundings. Shoreline Estate is one of the most exclusive neighborhoods in Lagos, offering a serene, upscale environment with top-tier amenities and a prime location along the waterfront. The villa features contemporary architecture with clean, sleek lines and expansive glass facades that maximize views of the serene surroundings.",
@@ -190,7 +190,7 @@ const Home = () => {
     },
     villam: {
       title: "Villa M",
-      location: "Lagos",
+      location: "Cowrie Creek, Lagos",
       images: [Vm1, Vm2, Vm3, Vm4, Vm5, Vm6, Vm7, Vm8, Vm9, Vm10, Vm11, Vm12],
       description:
         "Located on a lagoon facing peninsula, Villa M delicately slots into the luxurious neighborhood of Cowrie Creek Estate. The narrow and elongated door plate created an opportunity for HIGH PARK to discretely break down the volume into zones of activities, each defined by a set of unique custom elements.",
@@ -221,7 +221,13 @@ const Home = () => {
         Oasis14,
         Oasis15,
       ],
-      description: `Situated on a private drive off the commercial Admiralty strip, the architecture of this home is informed by its metropolitan condition. An oasis in the heart of the city, a hideaway from the buzzing city of Lagos, yet within reach of major high end art institutions, fine dining & business. \nDesigned by renowned South-African Architecture Studio - Luc Zeghers Architects (LZA), HIGH PARK was commissioned as Interior Architect and Project manager. Ambitious from the onset, we set to maintain the minimalist rigor of the architecture whilst infusing a layer of sensory and emotional richness to the design without compromising the refined functionality of it’s concept.\nWith that in mind, we opted to create a unified inner shell which allowed us to combine discreet elements such as doors, cabinetry, wall units & wine display into a unified system to present sleek uncluttered surfaces throughout the home.\nA layer of rich textures, finely detailed loose furniture, art & eclectic accessories is then introduced to create an emotive sense of luxury & well being.`,
+      description: `Situated on a private drive off the commercial Admiralty strip, the architecture of this home is informed by its metropolitan condition. An oasis in the heart of the city, a hideaway from the buzzing city of Lagos, yet within reach of major high end art institutions, fine dining & business. 
+
+Designed by renowned South-African Architecture Studio - Luc Zeghers Architects (LZA), HIGH PARK was commissioned as Interior Architect and Project manager. Ambitious from the onset, we set to maintain the minimalist rigor of the architecture whilst infusing a layer of sensory and emotional richness to the design without compromising the refined functionality of it’s concept.
+
+With that in mind, we opted to create a unified inner shell which allowed us to combine discreet elements such as doors, cabinetry, wall units & wine display into a unified system to present sleek uncluttered surfaces throughout the home.
+
+A layer of rich textures, finely detailed loose furniture, art & eclectic accessories is then introduced to create an emotive sense of luxury & well being.`,
       details: [
         "- Premium residential development",
         "- Landscaped surroundings",
@@ -260,7 +266,7 @@ const Home = () => {
     },
     landbridge: {
       title: "LANDBRIDGE TOWER",
-      location: "Lagos",
+      location: "Oniru, Lagos",
       images: [landbridge, landbridge2, landbridge3, landbridge4, landbridge5, landbridge6, landbridge7, landbridge8, landbridge9, landbridge10, landbridge11],
       description:
         "Landbridge Tower is an Architectural phenomenon where modern architecture fuses with enduring grandeur. It transcends the norms and meets today's contemporary and sustainable fundamentals that makes it a living environment of first choice within one of Lagos's highbrow neighborhoods.",
@@ -273,7 +279,7 @@ const Home = () => {
     },
     patrick: {
       title: "PATRICK HARBOUR",
-      location: "Lagos",
+      location: "Parkview, Lagos",
       images: [Patrick, Patrick2],
       description:
         "This striking 4-storey modern home embodies cutting-edge design and architectural innovation. It seamlessly blends form and function, using clean lines, expansive glass panels, and a thoughtful balance of natural materials to create an open, airy, and sophisticated living environment.",
@@ -283,28 +289,30 @@ const Home = () => {
       location: "Guzape, Abuja",
       images: [Guzape, Guz1, Guz2, Guz3, Guz4, Guz5],
       description:
-        "A landmark development in Abuja's emerging Guzape district."
+        "The Guzape slopes redefines the concept of multi-unit dwellings on a steep slope, offering modern homes that’s as much about embracing the environment as it is about architectural expression. By respecting the site's natural features and integrating sustainable design practices, the project becomes an example of how modern architecture can adapt to and enhance the land it occupies, turning a challenging slope into a unique and harmonious living experience."
     },
     project425: {
       title: "PROJECT 425",
-      location: "Lagos",
+      location: "Lekki, Lagos",
       images: [Project425, Project4252, Project4253],
       description:
-        "This modern development is situated in the upmarket Lekki neighborhood of Lagos. The design delivers a sense of ‘savoir vivre’ - the ability to live elegantly.The scheme comprises four triplexes and two penthouse apartments. Each unit is beautifully lit and rigorously designed to convey a minimalistic version of contemporary elegance.",
+        "This modern three-story family home is designed with clean lines, open spaces, and natural materials, creating a harmonious blend of luxury and comfort. The exterior features a minimalist façade with large floor-to-ceiling windows, smooth stucco, and wood accents, giving it a warm yet contemporary look.",
     },
     lekkibeachfront: {
       title: "LEKKI BEACH FRONT",
       location: "Lekki, Lagos",
       images: [Lbf, Lbf2, Lbf3, Lbf4, Lbf5],
       description:
-        "A landmark development in Abuja's emerging Guzape district."
+        `The Lekki beachfront project is an innovative residential development that strategically integrates private and communal spaces to maximize the site’s unique waterfront views despite a narrow frontage. The layout places most units perpendicular to the water, with only the corner unit at the edge directly facing the waterfront. This design creates a sense of exclusivity for the edge unit, enhancing its panoramic waterfront exposure, while providing all other residences with privacy and lateral views.
+
+The design prioritizes a cohesive connection to the waterfront for all residents through communal amenities. A key feature is the central swimming pool and open landscaped areas, carefully positioned to offer unobstructed views of the water. This pool area acts as the heart of the site, with loungers, terraces, and open spaces where residents can enjoy expansive waterfront vistas. The generous layout of these communal areas allows everyone to share in the waterfront experience, creating a resort-like atmosphere.`
     },
     jades: {
       title: "JADE'S COURT",
-      location: "Lagos",
+      location: "Ikeja GRA, Lagos",
       images: [Jade, Jade2, Jade3],
       description:
-        "A landmark development in Abuja's emerging Guzape district."
+        "The Jade’s Court project is a bold and modern terraced residential complex designed to provide a serene living environment within a bustling cityscape. With its distinctive black stucco façade, this project stands out as a sophisticated and contemporary addition to the urban fabric, exuding a sense of refined minimalism that aligns with our modern aesthetic ideals for the city of Lagos."
     }
   };
 
@@ -320,7 +328,7 @@ const Home = () => {
         <div id="fh5co-intro">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 col-md-pull-2">
-              <h2>A NEW PARADIGM FOR ARCHITECTURAL DESIGN &amp; INTERIOR.</h2>
+              <h2>VISIONARY ARCHITECTURE. <br></br>MODERN CREATIONS.</h2>
             </div>
           </div>
         </div>
@@ -355,11 +363,11 @@ const Home = () => {
                     <img
                       src={Shoreline}
                       className="img-responsive"
-                      alt="Shoreline estate lagos"
+                      alt="Azure Edge, Shoreline estate lagos"
                     />
                     <div className="desc">
-                      <h3>SHORELINE VILLAS</h3>
-                      <span>Lagos</span>
+                      <h3>AZURE EDGE</h3>
+                      <span>Shoreline Estate, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -394,7 +402,7 @@ const Home = () => {
                     />
                     <div className="desc">
                       <h3>LANDBRIDGE TOWER</h3>
-                      <span>Lagos</span>
+                      <span>Oniru, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -501,7 +509,7 @@ const Home = () => {
                     />
                     <div className="desc">
                       <h3>PATRICK HARBOUR</h3>
-                      <span>Lagos</span>
+                      <span>Parkview, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -518,7 +526,7 @@ const Home = () => {
                     />
                     <div className="desc">
                       <h3>PROJECT 425</h3>
-                      <span>Lagos</span>
+                      <span>Lekki, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -535,7 +543,7 @@ const Home = () => {
                     />
                     <div className="desc">
                       <h3>VILLA M</h3>
-                      <span>Lagos</span>
+                      <span>Cowrie Creek, Lagos</span>
                     </div>
                   </a>
                 </div>
@@ -552,7 +560,7 @@ const Home = () => {
                     />
                     <div className="desc">
                       <h3>JADE'S COURT</h3>
-                      <span>Lagos</span>
+                      <span>Ikeja GRA, Lagos</span>
                     </div>
                   </a>
                 </div>

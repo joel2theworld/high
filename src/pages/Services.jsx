@@ -2,10 +2,15 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Int3 from "../assets/integrity-tower.jpg";
-
+import { Helmet } from "react-helmet";
 const Services = () => {
   return (
     <div>
+      <Helmet>
+        <title>High Park Services</title>
+        <meta name="description" content="Premier Architects specializes in innovative architectural designs across Nigeria, featuring projects like Lekki Beach Front and Jade's Court in Lagos." />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </Helmet>
       <Header />
       <div className="container">
         {/* <h1 className="aboutitle">Our Services</h1> */}

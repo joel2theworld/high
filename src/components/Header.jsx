@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+// import '../css/Header.css';
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <nav className="fh5co-nav" role="navigation">
       <div className="container">
@@ -19,32 +24,25 @@ const Header = () => {
                 </NavLink>
               </div>
             </div>
-            <div className="col-sm-10 text-right menu-1">
+            {/* Hamburger Icon
+            <div className="hamburger" onClick={toggleMenu}>
+              &#9776;
+            </div> */}
+            <div className={`col-sm-10 text-right menu-1 ${isMenuOpen ? "open" : ""}`}>
               <ul>
-			  <li>
+                <li>
                   <NavLink to="/" end>
                     Home
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about">
-                    About Us
-                  </NavLink>
+                  <NavLink to="/about">About Us</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/services">
-                    Services
-                  </NavLink>
+                  <NavLink to="/services">Services</NavLink>
                 </li>
-                {/* <li className="has-dropdown">
-                  <NavLink to="/projects">
-                    Projects
-                  </NavLink>
-                </li> */}
                 <li>
-                  <NavLink to="/contact">
-                    Contact Us
-                  </NavLink>
+                  <NavLink to="/contact">Contact Us</NavLink>
                 </li>
               </ul>
             </div>
