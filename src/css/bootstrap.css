@@ -867,8 +867,7 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 45px;
-  padding-right: 45px;
+  
 }
 .container:before, .container:after {
   content: " ";
@@ -880,6 +879,14 @@ pre code {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    padding-left: 45px;
+  padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+  padding-right: 20px;
   }
 }
 @media (min-width: 992px) {
