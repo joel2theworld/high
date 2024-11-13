@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ProjectModal from "../components/ProjectModal";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import ProjectModal from "../components/ProjectModal.jsx";
+import OptimizedImage from "../components/OptimizedImage.jsx";
 import Ark from "../assets/ark2.jpg";
 import Ark2 from "../assets/ark.png";
 import Ark3 from "../assets/ak03.jpg";
@@ -318,7 +319,12 @@ The design prioritizes a cohesive connection to the waterfront for all residents
 
   const handleProjectClick = (projectKey, e) => {
     e.preventDefault();
-    setSelectedProject(projectsData[projectKey]);
+    const project = projectsData[projectKey];
+    // Reset the current image index when opening the modal
+    setSelectedProject({
+      ...project,
+      currentImageIndex: 0 // Ensure we always start from the first image
+    });
   };
 
   return (
@@ -343,10 +349,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("trimnell", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Trim}
                       className="img-responsive"
                       alt="Trimnell Tower"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>TRIMNELL TOWER</h3>
@@ -360,10 +367,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("shoreline", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Shoreline}
                       className="img-responsive"
                       alt="Azure Edge, Shoreline estate lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>AZURE EDGE</h3>
@@ -377,10 +385,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("integrity", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Integrity}
                       className="img-responsive"
                       alt="Integrity Tower Lekki"
+                      loading="lazy"
                       style={{ width: "100%" }}
                     />
                     <div className="desc">
@@ -395,10 +404,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("landbridge", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={landbridge}
                       className="img-responsive"
                       alt="Landbridge Tower Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>LANDBRIDGE TOWER</h3>
@@ -412,10 +422,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("guzape", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Guzape}
                       className="img-responsive"
                       alt="Guzape Project Abuja"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>GUZAPE SLOPES</h3>
@@ -429,10 +440,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("lekkibeachfront", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Lbf}
                       className="img-responsive"
                       alt="Lekki Beach Front Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>LEKKI BEACH FRONT</h3>
@@ -451,10 +463,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("oasis", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Oasis}
                       className="img-responsive"
                       alt="Oasis Villa"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>OASIS VILLA</h3>
@@ -468,10 +481,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("ark", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Ark}
                       className="img-responsive"
                       alt="The Ark Lekki"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>THE ARK</h3>
@@ -485,10 +499,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("jasmine", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Jas}
                       className="img-responsive"
                       alt="Jasmine Villas Ikoyi"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>JASMINE VILLAS</h3>
@@ -502,10 +517,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("patrick", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Patrick}
                       className="img-responsive"
                       alt="PATRICK HARBOUR Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>PATRICK HARBOUR</h3>
@@ -519,10 +535,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("project425", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Project425}
                       className="img-responsive"
                       alt="PROJECT425 Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>PROJECT 425</h3>
@@ -536,10 +553,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("villam", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Vm1}
                       className="img-responsive"
                       alt="Villa M Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>VILLA M</h3>
@@ -553,10 +571,11 @@ The design prioritizes a cohesive connection to the waterfront for all residents
                     className="portfolio-grid"
                     onClick={(e) => handleProjectClick("jades", e)}
                   >
-                    <img
+                    <OptimizedImage
                       src={Jade}
                       className="img-responsive"
                       alt="JADE'S COURT Lagos"
+                      loading="lazy"
                     />
                     <div className="desc">
                       <h3>JADE'S COURT</h3>

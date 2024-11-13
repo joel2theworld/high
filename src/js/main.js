@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import 'waypoints/lib/jquery.waypoints';
+import 'waypoints/lib/jquery.waypoints.js';
 
 console.log("main.js is loaded.")
 ;(function () {

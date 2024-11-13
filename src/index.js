@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import './css/icomoon.css';
 import './index.css';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.js';
+import reportWebVitals from './reportWebVitals.js';
 
 window.$ = window.jQuery = $;
 const root = ReactDOM.createRoot(document.getElementById('root'));

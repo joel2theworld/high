@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 import Int3 from "../assets/integrity-tower.jpg";
 import { Helmet } from "react-helmet";
 const Services = () => {
