@@ -194,7 +194,7 @@ const Home = () => {
       location: "Cowrie Creek, Lagos",
       images: [Vm1, Vm2, Vm3, Vm4, Vm5, Vm6, Vm7, Vm8, Vm9, Vm10, Vm11, Vm12],
       description:
-        "Located on a lagoon facing peninsula, Villa M delicately slots into the luxurious neighborhood of Cowrie Creek Estate. The narrow and elongated door plate created an opportunity for HIGH PARK to discretely break down the volume into zones of activities, each defined by a set of unique custom elements.",
+        "Located on a lagoon facing peninsula, Villa M delicately slots into the luxurious neighborhood of Cowrie Creek Estate. The narrow and elongated floor plate created an opportunity for HIGH PARK to discretely break down the volume into zones of activities, each defined by a set of unique custom elements.",
       details: [
         "- The foyer is defined by a series of vertical custom lights which double as directional markers.",
         "- The stair volume by an organic dematerialized staircase and wall cladding with differently sized elements and serrations.",
